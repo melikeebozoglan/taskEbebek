@@ -10,7 +10,7 @@
 
     <title>Ebebek</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+<!-- 
     <style type="text/css">
         body,
         html {
@@ -55,7 +55,6 @@
             color: #7D7D7D;
             font-family: 'Nunito', sans-serif;
             font-size: small;
-            text-decoration: line-through;
         }
 
         .items-wrapper {
@@ -72,7 +71,7 @@
             height: 100%;
             transition: transform 0.5s ease;
             justify-content: flex-start;
-            gap: 1.42%;
+            gap: 1.2%;
             background-color: white;
         }
 
@@ -146,7 +145,7 @@
         }
 
         .btn-add-cart:hover {
-            color:white;
+            color: white;
             background-color: #F28E00;
         }
 
@@ -168,25 +167,27 @@
             display: flex;
             font-size: 25px;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <button class="arrow-btn" onclick="movePrev()">&lt;</button>
         <div class="selected-item">
-            <h1>Beğenebileceğinizi düşündüklerimiz <i class="fa-solid fa-heart"
-                    style="color: red; font-size: 18px;"></i></h1>
+            <h1>Beğenebileceğinizi düşündüklerimiz</h1>
             <div class="items" id="carousel">
                 <div class="item-card">
                     <a href="https://www.e-bebek.com/hellobaby-yenidogan-6li-agiz-mendili-24x24cm-unisex-p-24ghlbumnd007001"
                         title="name" target="_blank" rel="noopener noreferrer">
-
                         <figure class="item-img">
-                            <button class="heart"><i class="fa-regular fa-heart"></i></button>
+                            <button class="heart" onclick="toggleFavorite('1', this)">
+                                <i class="fa-regular fa-heart"></i> 
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
                             <img src="https://cdn05.e-bebek.com/mnresize/300/300/media/p/organik-6li-agiz-mendili-24x24-cm_8682766103779_01.jpg"
                                 alt="deneme görseli" loading="auto" width="155" height="155">
-                            <figcaption style="display:none;  margin: 0; padding: 0;">ceo için fakat kullanıcı görmemeli
+                            <figcaption style="display:none;  margin: 0; padding: 0;">ceo için fakat kullanıcı
+                                görmemeli
                             </figcaption>
                         </figure>
                         <div class="item-desc">
@@ -199,143 +200,12 @@
                     </a>
                     <button class="btn-add-cart" type="button" onclick="addToCart(123)">Sepete Ekle</button>
                 </div>
-
-
-                
-                <div class="item-card">
-                    <a href="https://www.e-bebek.com/hellobaby-yenidogan-6li-agiz-mendili-24x24cm-unisex-p-24ghlbumnd007001"
-                        title="name" target="_blank" rel="noopener noreferrer">
-
-                        <figure class="item-img">
-                            <img src="https://cdn05.e-bebek.com/mnresize/300/300/media/p/organik-6li-agiz-mendili-24x24-cm_8682766103779_01.jpg"
-                                alt="deneme görseli" loading="auto" width="155" height="155">
-                            <figcaption style="display:none;  margin: 0; padding: 0;">ceo için fakat kullanıcı görmemeli
-                            </figcaption>
-                        </figure>
-                        <div class="item-desc">
-                            <p><strong>brand - </strong> name</p>
-                            <p>original_price</p>
-                            <p>price</p>
-                        </div>
-                    </a>
-                    <button type="button" onclick="addToCart(123)">Sepete Ekle</button>
-                </div>
-                <div class="item-card">
-                    <a href="https://www.e-bebek.com/hellobaby-yenidogan-6li-agiz-mendili-24x24cm-unisex-p-24ghlbumnd007001"
-                        title="name" target="_blank" rel="noopener noreferrer">
-
-                        <figure class="item-img">
-                            <img src="https://cdn05.e-bebek.com/mnresize/300/300/media/p/organik-6li-agiz-mendili-24x24-cm_8682766103779_01.jpg"
-                                alt="deneme görseli" loading="auto" width="155" height="155">
-                            <figcaption style="display:none;  margin: 0; padding: 0;">ceo için fakat kullanıcı görmemeli
-                            </figcaption>
-                        </figure>
-                        <div class="item-desc">
-                            <p><strong>brand - </strong> name</p>
-                            <p>original_price</p>
-                            <p>price</p>
-                        </div>
-                    </a>
-                    <button type="button" onclick="addToCart(123)">Sepete Ekle</button>
-                </div>
-                <div class="item-card">
-                    <a href="https://www.e-bebek.com/hellobaby-yenidogan-6li-agiz-mendili-24x24cm-unisex-p-24ghlbumnd007001"
-                        title="name" target="_blank" rel="noopener noreferrer">
-
-                        <figure class="item-img">
-                            <img src="https://cdn05.e-bebek.com/mnresize/300/300/media/p/organik-6li-agiz-mendili-24x24-cm_8682766103779_01.jpg"
-                                alt="deneme görseli" loading="auto" width="155" height="155">
-                            <figcaption style="display:none;  margin: 0; padding: 0;">ceo için fakat kullanıcı görmemeli
-                            </figcaption>
-                        </figure>
-                        <div class="item-desc">
-                            <p><strong>brand - </strong> name</p>
-                            <p>original_price</p>
-                            <p>price</p>
-                        </div>
-                    </a>
-                    <button type="button" onclick="addToCart(123)">Sepete Ekle</button>
-                </div>
-                <div class="item-card">
-                    <a href="https://www.e-bebek.com/hellobaby-yenidogan-6li-agiz-mendili-24x24cm-unisex-p-24ghlbumnd007001"
-                        title="name" target="_blank" rel="noopener noreferrer">
-
-                        <figure class="item-img">
-                            <img src="https://cdn05.e-bebek.com/mnresize/300/300/media/p/organik-6li-agiz-mendili-24x24-cm_8682766103779_01.jpg"
-                                alt="deneme görseli" loading="auto" width="155" height="155">
-                            <figcaption style="display:none;  margin: 0; padding: 0;">ceo için fakat kullanıcı görmemeli
-                            </figcaption>
-                        </figure>
-                        <div class="item-desc">
-                            <p><strong>brand - </strong> name</p>
-                            <p>original_price</p>
-                            <p>price</p>
-                        </div>
-                    </a>
-                    <button type="button" onclick="addToCart(123)">Sepete Ekle</button>
-                </div>
-                <div class="item-card">
-                    <a href="https://www.e-bebek.com/hellobaby-yenidogan-6li-agiz-mendili-24x24cm-unisex-p-24ghlbumnd007001"
-                        title="name" target="_blank" rel="noopener noreferrer">
-
-                        <figure class="item-img">
-                            <img src="https://cdn05.e-bebek.com/mnresize/300/300/media/p/organik-6li-agiz-mendili-24x24-cm_8682766103779_01.jpg"
-                                alt="deneme görseli" loading="auto" width="155" height="155">
-                            <figcaption style="display:none;  margin: 0; padding: 0;">ceo için fakat kullanıcı görmemeli
-                            </figcaption>
-                        </figure>
-                        <div class="item-desc">
-                            <p><strong>brand - </strong> name</p>
-                            <p>original_price</p>
-                            <p>price</p>
-                        </div>
-                    </a>
-                    <button type="button" onclick="addToCart(123)">Sepete Ekle</button>
-                </div>
-                <div class="item-card">
-                    <a href="https://www.e-bebek.com/hellobaby-yenidogan-6li-agiz-mendili-24x24cm-unisex-p-24ghlbumnd007001"
-                        title="name" target="_blank" rel="noopener noreferrer">
-
-                        <figure class="item-img">
-                            <img src="https://cdn05.e-bebek.com/mnresize/300/300/media/p/organik-6li-agiz-mendili-24x24-cm_8682766103779_01.jpg"
-                                alt="deneme görseli" loading="auto" width="155" height="155">
-                            <figcaption style="display:none;  margin: 0; padding: 0;">ceo için fakat kullanıcı görmemeli
-                            </figcaption>
-                        </figure>
-                        <div class="item-desc">
-                            <p><strong>brand - </strong> name</p>
-                            <p>original_price</p>
-                            <p>price</p>
-                        </div>
-                    </a>
-                    <button type="button" onclick="addToCart(123)">Sepete Ekle</button>
-                </div>
-                <div class="item-card">
-                    <a href="https://www.e-bebek.com/hellobaby-yenidogan-6li-agiz-mendili-24x24cm-unisex-p-24ghlbumnd007001"
-                        title="name" target="_blank" rel="noopener noreferrer">
-
-                        <figure class="item-img">
-                            <img src="https://cdn05.e-bebek.com/mnresize/300/300/media/p/organik-6li-agiz-mendili-24x24-cm_8682766103779_01.jpg"
-                                alt="deneme görseli" loading="auto" width="155" height="155">
-                            <figcaption style="display:none;  margin: 0; padding: 0;">ceo için fakat kullanıcı görmemeli
-                            </figcaption>
-                        </figure>
-                        <div class="item-desc">
-                            <p><strong>brand - </strong> name</p>
-                            <p>original_price</p>
-                            <p>price</p>
-                        </div>
-                    </a>
-                    <button type="button" onclick="addToCart(123)">Sepete Ekle</button>
-                </div>
-
-
             </div>
         </div>
         <button class="arrow-btn" onclick="moveNext()">&gt;</button>
-    </div>
+    </div> -->
 
-    <script>
+    <!-- <script>
         const carousel = document.getElementById('carousel');
         const cards = carousel.querySelectorAll('.item-card');
         const visibleCount = 5;
@@ -361,13 +231,36 @@
                 updateCarousel();
             }
         }
-    </script>
+
+
+        // Sayfa yüklendiğinde favori ikonlarını kontrol et
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.item-card').forEach(card => {
+                const urunId = card.getAttribute('data-id');
+                const heartBtn = card.querySelector('.heart');
+                if (localStorage.getItem(urunId) === 'true') {
+                    heartBtn.classList.add("favori");
+                }
+            });
+        });
+
+        // Favori toggle fonksiyonu
+        function toggleFavorite(urunId, button) {
+            const favoriMi = button.classList.toggle("favori");
+            localStorage.setItem(urunId, favoriMi);
+        }
+
+        // Sepete ekle (örnek)
+        function addToCart(id) {
+            alert("Ürün sepete eklendi: " + id);
+        }
+    </script> -->
 
 </body>
 
 </html>
 
 
-yanlış sayfa
+<!-- yanlış sayfa
 ➔ “price” ve “original_price” farklıysa, her iki fiyatı da örnekteki gibi gösterin ve ayrıca indirim miktarını
-hesaplayın ve gösterin.
+hesaplayın ve gösterin. -->
