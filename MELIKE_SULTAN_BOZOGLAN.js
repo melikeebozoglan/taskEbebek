@@ -88,7 +88,7 @@
       .container {
         background-color: white;
         min-height: 100vh;
-        width: 100%;
+        width: 100vw;
         align-items: center;
         justify-content: center;
         display: flex;
@@ -97,13 +97,12 @@
 
       .selected-item {
         background-color: white;
-        width: 75%;
+        width: 70vw;
         height: 40%;
         /* height: auto; */
         border-radius: 0px 0px 40px 40px;
         overflow: hidden;
-        padding-bottom: 2%;
-        padding-right: 1px;
+        padding-bottom: 2vw;
       }
 
       h1 {
@@ -152,10 +151,9 @@
         height: 100%;
         transition: transform 0.5s ease;
         justify-content: flex-start;
-        gap: 12px;
+        gap: 0.15vw;
         background-color: white;
-        align-items: cenetr;
-        
+        align-items: center;
       }
 
       .item-card {
@@ -167,8 +165,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        padding-right: 1%;
-        padding-left: 1%;
+        padding-right: 0.8%;
+        padding-left: 0.8%;
         border-radius: 10px;
         /* text-align: center; */
         /* margin-left: auto; */
@@ -381,7 +379,7 @@
     if (cards.length === 0) return;
 
     const cardWidth = cards[0].offsetWidth;
-    const gap = 11;
+    const gap = 1.5;
     const scrollAmount = currentIndex * (cardWidth + gap);
     carousel.style.transform = `translateX(-${scrollAmount}px)`;
   };
